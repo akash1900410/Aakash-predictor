@@ -27,7 +27,7 @@
     async function fetchData() {
       try {
         const ts = Date.now();
-        const res = await fetch(`https://draw.ar-lottery01.com/WinGo/WinGo_30S/GetHistoryIssuePage.json?ts=${ts}`);
+        const res = await fetch(`https://akash-proxy.onrender.com/api/data?ts=${ts}`);
         const data = await res.json();
         const list = data?.Data?.list;
 
